@@ -2,145 +2,467 @@
     box-sizing: border-box;
 }
 
+
 html,
 body {
+
     margin: 0;
     padding: 0;
+
 }
+
 
 body {
 
-    background-color: #ffd9ed;
+    background-color: #eeeeee;
 
     background-image:
         radial-gradient(
-            circle,
-            rgba(255,255,255,0.8) 2px,
-            transparent 3px
+            white 2px,
+            transparent 2px
         );
 
-    background-size: 22px 22px;
+    background-size: 16px 16px;
 
     font-family:
-        "Trebuchet MS",
+        Tahoma,
         Arial,
         sans-serif;
 
-    color: #9b4f76;
+    color: #995074;
 
-    font-size: 13px;
-}
-
-
-/* =========================
-   MAIN WEBSITE
-========================= */
-
-.site-wrapper {
-
-    width: 1100px;
-
-    max-width: 96%;
-
-    margin: 18px auto;
-
-    background: #fff8fc;
-
-    border: 3px solid #f5a8ca;
-
-    box-shadow:
-        0 0 0 5px #ffe7f3,
-        0 0 20px rgba(177, 72, 128, .25);
+    font-size: 12px;
 
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* =================================
+   INTERNET EXPLORER
+================================= */
 
-.header {
+.browser {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #d8d8d8;
+
+}
+
+
+.titlebar {
+
+    height: 32px;
 
     background:
         linear-gradient(
-            #fff9fc,
-            #ffd7ea
+            #6691c5,
+            #285b99
         );
 
-    border-bottom:
-        3px double #ef8fba;
-
-    padding: 12px;
-
-    text-align: center;
-
-}
-
-.header-content {
+    color: white;
 
     display: flex;
 
     align-items: center;
 
-    justify-content: center;
+    padding: 3px 7px;
 
-    gap: 35px;
-
-}
-
-.header-decoration {
-
-    color: #ed8db8;
-
-    font-size: 15px;
-
-    letter-spacing: 4px;
+    font-family: Arial;
 
 }
 
-.logo-area h1 {
+
+.title-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+}
+
+
+.ie-icon {
+
+    background: white;
+
+    color: #2f65a5;
+
+    border: 1px solid #244d7c;
+
+    width: 22px;
+
+    height: 22px;
+
+    display: grid;
+
+    place-items: center;
+
+}
+
+
+.window-buttons {
+
+    margin-left: auto;
+
+    display: flex;
+
+    gap: 3px;
+
+}
+
+
+.window-buttons button {
+
+    width: 23px;
+
+    height: 21px;
+
+    padding: 0;
+
+    background: #dddddd;
+
+    border: 1px solid #666;
+
+}
+
+
+.browser-menu {
+
+    height: 30px;
+
+    background: #eeeeee;
+
+    border-bottom: 1px solid #999;
+
+    padding: 7px;
+
+    color: #222;
+
+    font-family: Arial;
+
+}
+
+
+.toolbar {
+
+    height: 46px;
+
+    background: #eeeeee;
+
+    border-bottom: 2px solid #999;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 5px;
+
+}
+
+
+.toolbar-button {
+
+    width: 28px;
+
+    height: 28px;
+
+    background:
+        linear-gradient(
+            white,
+            #d8d8d8
+        );
+
+    border: 1px solid #aaa;
+
+    font-size: 17px;
+
+}
+
+
+.toolbar-button.disabled {
+
+    color: #aaa;
+
+}
+
+
+.toolbar-text {
+
+    padding:
+        6px 10px;
+
+    color: #333;
+
+    font-family: Arial;
+
+}
+
+
+.address {
+
+    flex: 1;
+
+    height: 29px;
+
+    line-height: 29px;
+
+    background: white;
+
+    border: 1px solid #888;
+
+    padding-left: 8px;
+
+    color: #333;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+}
+
+
+.go {
+
+    height: 29px;
+
+    background: #3ca74d;
+
+    color: white;
+
+    border: 1px solid #287735;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =================================
+   WEBSITE
+================================= */
+
+.website {
+
+    width: 1180px;
+
+    max-width: 96%;
+
+    margin: 8px auto;
+
+    background: #fff9fc;
+
+    border:
+        2px solid #efb1ca;
+
+    box-shadow:
+        0 0 0 4px #ffe7f2;
+
+}
+
+
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+
+    height: 205px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            white 2px,
+            transparent 2px
+        ),
+
+        linear-gradient(
+            #fffaff,
+            #ffd7e9
+        );
+
+    background-size:
+        20px 20px,
+        100% 100%;
+
+    border-bottom:
+        2px solid #ec9bbb;
+
+}
+
+
+.lace {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 30px;
+
+    border-bottom:
+        3px dotted #efa2c3;
+
+}
+
+
+.header-sparkles {
+
+    position: relative;
+
+    z-index: 5;
+
+    padding-top: 30px;
+
+    color: #ed8bb7;
+
+    letter-spacing: 6px;
+
+}
+
+
+.header-title {
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.header-title h1 {
+
+    margin: 5px 0 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 67px;
+
+    color: #ed8eb7;
+
+    text-shadow:
+
+        2px 2px white,
+
+        4px 4px #f5b5d0;
+
+}
+
+
+.header-title p {
 
     margin: 0;
 
-    color: #ed6fa7;
-
-    font-family:
-        Georgia,
-        serif;
-
-    font-size: 55px;
-
-    text-shadow:
-        2px 2px #fff,
-        3px 3px #f5a7c8;
-
-    letter-spacing: 2px;
-
-}
-
-.logo-area p {
-
-    margin:
-        3px 0 0;
-
-    color: #c76892;
+    font-family: Georgia, serif;
 
     font-style: italic;
 
-}
-
-.mascot {
-
-    font-size: 65px;
+    color: #d76d9d;
 
 }
 
 
-/* =========================
-   NAV
-========================= */
+.header-character {
 
-.main-nav {
+    position: absolute;
+
+    z-index: 4;
+
+    font-size: 75px;
+
+    bottom: 15px;
+
+}
+
+
+.left-character {
+
+    left: 55px;
+
+}
+
+
+.right-character {
+
+    right: 55px;
+
+}
+
+
+.header-message {
+
+    position: absolute;
+
+    z-index: 6;
+
+    background: #fff1f7;
+
+    border:
+        1px solid #ef9fc0;
+
+    padding: 8px 12px;
+
+    color: #d55d91;
+
+}
+
+
+.left-message {
+
+    left: 165px;
+
+    top: 70px;
+
+}
+
+
+.right-message {
+
+    right: 155px;
+
+    top: 75px;
+
+}
+
+
+.header-bottom {
+
+    position: absolute;
+
+    bottom: 5px;
+
+    left: 0;
+
+    right: 0;
+
+    color: #ef8bb7;
+
+    letter-spacing: 9px;
+
+}
+
+
+
+/* =================================
+   NAVIGATION
+================================= */
+
+.navigation {
 
     display: flex;
 
@@ -148,62 +470,67 @@ body {
 
     flex-wrap: wrap;
 
-    background: #ffc5df;
-
-    border-bottom:
-        2px solid #ef8db7;
+    gap: 4px;
 
     padding: 6px;
 
-    gap: 4px;
+    background: #ffc5df;
+
+    border-bottom:
+        2px solid #ef91b9;
 
 }
 
-.main-nav a {
 
-    display: block;
+.navigation a {
 
     padding:
-        8px 17px;
+        8px 14px;
 
-    background:
-        linear-gradient(
-            #fff,
-            #ffd9ea
-        );
+    min-width: 100px;
 
-    border:
-        1px solid #ef9abd;
-
-    color: #d6508b;
+    text-align: center;
 
     text-decoration: none;
 
+    color: #d4528c;
+
     font-weight: bold;
+
+    background:
+        linear-gradient(
+            white,
+            #ffd9e9
+        );
+
+    border:
+        1px solid #ee99bc;
 
 }
 
-.main-nav a:hover {
 
-    background: #ffabd1;
+.navigation a:hover {
+
+    background: #ffafd2;
 
     color: white;
 
 }
 
 
-/* =========================
-   THREE COLUMN LAYOUT
-========================= */
 
-.layout {
+/* =================================
+   COLUMNS
+================================= */
+
+.columns {
 
     display: grid;
 
     grid-template-columns:
-        210px
+        225px
         1fr
-        230px;
+        235px;
 
     gap: 10px;
 
@@ -212,108 +539,153 @@ body {
 }
 
 
-/* =========================
-   BOXES
-========================= */
+
+/* =================================
+   BOX
+================================= */
 
 .box {
 
-    border:
-        2px solid #efa0c3;
+    background: #fffafb;
 
-    background:
-        #fffafb;
+    border:
+        2px solid #efa7c5;
+
+    box-shadow:
+        inset 0 0 0 2px #ffe9f3;
 
     margin-bottom: 12px;
 
-    box-shadow:
-        inset 0 0 0 2px #ffe7f2;
-
 }
+
 
 .box-title {
 
     background:
         linear-gradient(
-            #ffc4de,
-            #f58eb8
+            #ffc6df,
+            #f18ab5
         );
 
     color: white;
-
-    font-weight: bold;
 
     text-align: center;
 
     padding: 7px;
 
     border-bottom:
-        2px solid #e87ba9;
+        2px solid #e47ba7;
 
-    text-shadow:
-        1px 1px #b74b76;
+    font-family: Georgia, serif;
 
     font-size: 14px;
 
+    font-weight: bold;
+
+    text-shadow:
+        1px 1px #b34e78;
+
 }
 
-.box-content {
 
-    padding: 10px;
+
+/* =================================
+   LEFT NAV
+================================= */
+
+.links {
+
+    padding: 9px;
 
 }
 
-.box-content a {
+
+.links a {
 
     display: block;
 
-    padding: 6px 4px;
+    padding: 6px 3px;
 
-    color: #c95087;
+    color: #c95588;
 
     text-decoration: none;
 
     border-bottom:
-        1px dotted #efa6c5;
-
-}
-
-.box-content a:hover {
-
-    background: #ffe0ee;
-
-    color: #ec4e91;
+        1px dotted #efb1ca;
 
 }
 
 
-/* =========================
+.links a:hover {
+
+    background: #ffe1ee;
+
+}
+
+
+.new-here {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px;
+
+    background: #ffe4ef;
+
+    border:
+        2px solid #efa6c5;
+
+    margin-bottom: 12px;
+
+}
+
+
+.little-character {
+
+    font-size: 36px;
+
+}
+
+
+
+/* =================================
    WELCOME
-========================= */
+================================= */
 
-.welcome-content {
+.welcome {
 
-    display: grid;
+    display: flex;
 
-    grid-template-columns:
-        1fr 180px;
+    align-items: center;
 
-    gap: 15px;
+    min-height: 205px;
+
+}
+
+
+.welcome-text {
+
+    width: 57%;
 
     padding: 15px;
+
+    font-size: 13px;
 
     line-height: 1.7;
 
 }
 
-.welcome-content p {
 
-    margin:
-        5px 0 10px;
+.welcome-picture {
 
-}
+    width: 37%;
 
-.welcome-art {
+    min-height: 150px;
+
+    margin-right: 3%;
 
     display: flex;
 
@@ -321,22 +693,29 @@ body {
 
     justify-content: center;
 
-    font-size: 38px;
+    text-align: center;
+
+    font-size: 35px;
+
+    line-height: 1.6;
 
     background:
-        #ffe6f1;
+        linear-gradient(
+            135deg,
+            #ffe6f1,
+            #ffc4df
+        );
 
     border:
-        2px dotted #ec91b8;
-
-    padding: 20px;
+        2px dotted #ed99bd;
 
 }
 
 
-/* =========================
+
+/* =================================
    UPDATES
-========================= */
+================================= */
 
 .update {
 
@@ -347,107 +726,134 @@ body {
     padding: 12px;
 
     border-bottom:
-        1px dashed #efadc8;
+        1px dashed #efb2ca;
 
 }
 
-.update-icon {
 
-    width: 55px;
+.update-picture {
 
-    height: 55px;
+    width: 58px;
 
-    background: #ffe0ee;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 30px;
+
+    background: #ffe3ef;
 
     border:
-        1px solid #f19abd;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 28px;
+        2px solid #efa6c4;
 
 }
+
 
 .update h3 {
 
-    margin:
-        0 0 3px;
+    margin: 0;
 
-    color: #df6397;
+    color: #dc679b;
 
 }
+
 
 .update p {
 
-    margin:
-        0 0 4px;
+    margin: 4px 0;
 
 }
+
 
 .update small {
 
-    color: #b78a9f;
+    color: #b38a9f;
 
 }
 
-.center-link {
+
+.view-all {
 
     text-align: center;
 
     padding: 10px;
 
-    color: #e46a9e;
+    color: #df6a9e;
 
     font-weight: bold;
 
 }
 
 
-/* =========================
-   MINI CARD
-========================= */
 
-.mini-card {
+/* =================================
+   FEATURED
+================================= */
 
-    display: flex;
+.featured {
 
-    align-items: center;
+    display: grid;
 
-    gap: 8px;
+    grid-template-columns:
+        repeat(3, 1fr);
 
-    padding: 10px;
-
-    background: #ffe5f0;
-
-    border:
-        2px solid #efa4c5;
-
-    margin-bottom: 12px;
-
-    color: #bd5d87;
-
-}
-
-.mini-character {
-
-    font-size: 35px;
-
-}
-
-
-/* =========================
-   LOGIN
-========================= */
-
-.login {
+    gap: 10px;
 
     padding: 12px;
 
 }
+
+
+.feature {
+
+    height: 100px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 32px;
+
+    background: #ffe1ee;
+
+    border:
+        2px dotted #ee9cbe;
+
+}
+
+
+.feature span {
+
+    font-size: 12px;
+
+    color: #c55787;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =================================
+   LOGIN
+================================= */
+
+.login {
+
+    padding: 10px;
+
+}
+
 
 .login label {
 
@@ -457,18 +863,20 @@ body {
 
 }
 
+
 .login input {
 
     width: 100%;
 
+    height: 25px;
+
     border:
-        1px solid #eca1c1;
+        1px solid #eca0c0;
 
     background: #fff8fc;
 
-    height: 25px;
-
 }
+
 
 .login button {
 
@@ -483,84 +891,84 @@ body {
     background:
         linear-gradient(
             #ffb8d7,
-            #ec78aa
+            #eb78aa
         );
 
     color: white;
 
     border:
-        1px solid #d95b8e;
-
-    cursor: pointer;
+        1px solid #d75b8e;
 
 }
+
 
 .login a {
 
     display: block;
 
-    color: #c95888;
+    color: #c65887;
 
     margin-top: 4px;
 
 }
 
 
-/* =========================
-   DAILY CUTE
-========================= */
 
-.daily-cute {
+/* =================================
+   DAILY
+================================= */
 
-    text-align: center;
+.daily {
 
     padding: 10px;
 
+    text-align: center;
+
 }
 
-.cute-image {
+
+.puppy {
 
     height: 120px;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 70px;
 
     background:
         linear-gradient(
             135deg,
-            #ffe7f2,
-            #ffc4de
+            #ffe8f2,
+            #ffc5df
         );
 
     border:
-        2px solid #efa0c2;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 65px;
+        2px solid #efa2c2;
 
 }
 
-.daily-cute p {
 
-    margin:
-        7px 0 0;
+.daily b {
+
+    display: block;
 
     color: #dd6397;
 
-    font-weight: bold;
+    margin-top: 7px;
 
 }
 
 
-/* =========================
+
+/* =================================
    QUOTE
-========================= */
+================================= */
 
 .quote {
 
-    padding: 12px;
+    padding: 13px;
 
     text-align: center;
 
@@ -568,132 +976,64 @@ body {
 
     font-style: italic;
 
-    color: #b65d84;
-
     line-height: 1.6;
 
 }
 
 
-/* =========================
+.quote-decoration {
+
+    margin-top: 10px;
+
+    font-style: normal;
+
+}
+
+
+
+/* =================================
    STATS
-========================= */
+================================= */
 
 .stats {
 
     padding: 10px;
 
-}
-
-.stats p {
-
-    margin:
-        4px 0;
-
-    border-bottom:
-        1px dotted #efb0c9;
-
-    padding-bottom: 3px;
+    line-height: 1.8;
 
 }
 
 
-/* =========================
-   FEATURED
-========================= */
 
-.featured-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 10px;
-
-    padding: 12px;
-
-}
-
-.feature {
-
-    height: 100px;
-
-    background:
-        #ffe2ef;
-
-    border:
-        2px dotted #ee9cbe;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    font-size: 30px;
-
-}
-
-.feature b {
-
-    font-size: 12px;
-
-    color: #c85888;
-
-}
-
-
-/* =========================
+/* =================================
    FOOTER
-========================= */
+================================= */
 
 footer {
 
-    border-top:
-        3px double #ed99bd;
-
-    background:
-        #ffd8e9;
+    padding: 14px;
 
     text-align: center;
 
-    padding: 14px;
+    line-height: 1.8;
 
-    color: #ad5b82;
+    background: #ffd8e9;
 
-}
+    border-top:
+        3px double #ed9abb;
 
-.footer-links {
-
-    color: #d25d91;
-
-    margin-bottom: 8px;
+    color: #ae5c82;
 
 }
 
-footer p {
-
-    margin:
-        5px;
-
-}
-
-
-/* =========================
-   BLINK EFFECT
-========================= */
 
 .blink {
 
     animation:
-        blink 1.5s infinite;
+        blink 1.4s infinite;
 
 }
+
 
 @keyframes blink {
 
@@ -704,48 +1044,177 @@ footer p {
 
     51%,
     100% {
-        opacity: .3;
+        opacity: .35;
     }
 
 }
 
 
-/* =========================
+
+/* =================================
    MOBILE
-========================= */
+================================= */
 
-@media (max-width: 850px) {
+@media(max-width:850px) {
 
-    .layout {
+
+    .browser-menu {
+
+        display: none;
+
+    }
+
+
+    .toolbar-text {
+
+        display: none;
+
+    }
+
+
+    .website {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        box-shadow: none;
+
+    }
+
+
+    .header {
+
+        height: 165px;
+
+    }
+
+
+    .header-title h1 {
+
+        font-size: 43px;
+
+    }
+
+
+    .header-title p {
+
+        font-size: 10px;
+
+    }
+
+
+    .header-character {
+
+        font-size: 42px;
+
+        bottom: 15px;
+
+    }
+
+
+    .left-character {
+
+        left: 15px;
+
+    }
+
+
+    .right-character {
+
+        right: 15px;
+
+    }
+
+
+    .header-message {
+
+        display: none;
+
+    }
+
+
+    .header-sparkles {
+
+        font-size: 10px;
+
+    }
+
+
+    .navigation a {
+
+        min-width: 23%;
+
+        flex: 1 1 23%;
+
+        font-size: 10px;
+
+        padding: 6px 2px;
+
+    }
+
+
+    .columns {
+
+        grid-template-columns: 1fr;
+
+        padding: 7px;
+
+    }
+
+
+    .left-column {
+
+        order: 1;
+
+    }
+
+
+    .center-column {
+
+        order: 2;
+
+    }
+
+
+    .right-column {
+
+        order: 3;
+
+    }
+
+
+    .welcome {
+
+        display: block;
+
+    }
+
+
+    .welcome-text {
+
+        width: 100%;
+
+    }
+
+
+    .welcome-picture {
+
+        width: 90%;
+
+        margin:
+            0 auto 12px;
+
+    }
+
+
+    .featured {
 
         grid-template-columns:
-            1fr;
+            1fr 1fr;
 
     }
 
-    .logo-area h1 {
-
-        font-size: 38px;
-
     }
-
-    .header-content {
-
-        gap: 10px;
-
-    }
-
-    .mascot {
-
-        font-size: 40px;
-
-    }
-
-    .main-nav a {
-
-        padding:
-            6px 10px;
-
-    }
-
-      }
